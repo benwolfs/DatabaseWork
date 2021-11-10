@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A36FF4C6-E9A5-61A1-F80B-7E3C6AF28659" name="Card_Type">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>64DC2726-0991-E4A4-B0CF-C501A5253DD2</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Type" id="E15636CB-2B3E-24E1-115A-6FBFCA7B62B0">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>9FFF1C9A-A64C-3F95-B1FE-6F868698DD3C</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tname" id="E3DBE96B-B80C-A3BA-C6F4-875DDB3BA513">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>F51792D0-CCCB-E832-4604-382055657A21</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Discount" id="4DAA0A0F-327E-5272-BE09-93BD982B0462">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>23F8417A-DD1B-662E-DDED-D20280F6AAF7</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D4C4869-0A35-3F6F-B973-91AAA30A88E2" name="Card_Type_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>819C8F61-9372-4915-F777-D2D61A611FEF</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E15636CB-2B3E-24E1-115A-6FBFCA7B62B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

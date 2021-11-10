@@ -1,0 +1,58 @@
+/*
+select fname ||' '|| lname as NameCus
+from customers cu, card c, card_type ct
+where cu.id_cus = c.cuid_cus
+and c.cid_type = ct.id_type
+and c.cid_type = 'V'
+and c.exp_date like '%16';
+*/
+
+/*
+select fname,lname,(select sum(u.point)
+                    from card c,customers cu,usepoint u
+                    where c.cuid_cus = cu.id_cus and cu.fname = 'Nani' and c.id_card = u.cid_card and u.pointtype = 'C') -
+                        (select sum(u.point)
+                         from card c,customers cu,usepoint u
+                         where c.cuid_cus = cu.id_cus and cu.fname = 'Nani' and c.id_card = u.cid_card and u.pointtype = 'U') as Remain_Point
+from customers
+where fname = 'Nani'
+group by fname,lname;
+*/
+
+/*
+select m.mname as movie_name,b.bname as branch_name,t.no_theater,s.round,s.startshow
+from showtime s,movie_in_theater mit,theaters t,branch b,movies m
+where s.mtid_mit = mit.id_mit
+and mit.mid_movie = m.id_movie
+and mit.tid_theater = t.id_theater
+and t.bid_branch = b.id_branch
+and m.mname = 'The Godfather '
+and b.bname = 'SFX Emporium - Sukhumvit';
+*/
+
+/*
+select cu.fname, tk.dateticket, sh.startshow, sh.round, mt.mtdate, m.mname, m.mtype, t.no_theater, b.bname
+from customers cu, ticket tk, showtime sh, movie_in_theater mt, movies m, branch b, theaters t
+where cu.id_cus = tk.cuid_cus
+and tk.shid_show = sh.id_show
+and sh.mtid_mit = mt.id_mit
+and mt.mid_movie = m.id_movie
+and mt.tid_theater = t.id_theater
+and t.bid_branch = b.id_branch
+and cu.fname = 'Nikko';
+*/
+
+
+select s.no_seat,s.round,t.no_theater,m.mname,s.startshow
+from seat s,theaters t,showtime s,movie_in_theater mit,branch b,movies m
+where s.tid_theater = t.id_theater 
+and s.mtid_mit = mit.id_mit
+and mit.mid_movie = m.id_movie
+and mit.tid_theater = t.id_theater
+and t.bid_branch = b.id_branch
+and mname = 'The Lord of the Rings: The Return of the King '
+and s.startshow >= '21-SEP-20 11.00.00' and s.startshow < '21-SEP-20 12.00.00'
+and s.available = 'T'
+and b.bname = 'SF World Cinema Central World'
+and t.no_theater = '3'
+and s.round = '1';

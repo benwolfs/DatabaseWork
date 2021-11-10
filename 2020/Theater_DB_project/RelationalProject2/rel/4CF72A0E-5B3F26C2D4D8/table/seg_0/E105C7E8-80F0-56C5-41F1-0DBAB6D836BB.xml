@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E105C7E8-80F0-56C5-41F1-0DBAB6D836BB" name="Movies">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>E685668B-BC0B-D11D-3C38-EFE51D1D60DE</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Movie" id="2811B75B-AFE2-E736-982A-643E98B9903A">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>7E522D62-FF3A-3384-4D55-B36E463533E2</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mname" id="E66A80EF-CB4E-7D4E-695B-372E41989A29">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>1C2FFE09-1595-C9C1-143D-37FA7D6C3481</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Mtype" id="82BFE423-43CC-C030-DB97-A44AB7DF26D3">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>A2A1B578-7249-0B08-3468-7B18B0B0D949</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Release" id="3232EB3E-57BF-5E6C-B7E9-1BFD59CE0CF1">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>8CCCB3F5-E828-58FB-0891-CCFF26EF2375</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Out" id="DEE68321-7926-2985-3A57-7B4D213026D7">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>E7AF8216-9CCA-286F-E3AC-BD16BA685A6C</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Duration" id="3A38E8EB-7C35-508F-BA7F-55ECA1188937">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>BEF34953-525A-7360-4B83-985B9185B11F</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="450657B3-BF5B-1045-567D-278CC7A60AC6" name="Movies_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>AE914AF1-E79A-43EF-358A-56A681D4407E</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2811B75B-AFE2-E736-982A-643E98B9903A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

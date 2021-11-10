@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13374638-9362-ACA7-5F89-AFC5E0B9BAFB" name="Showtime">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>0143B87D-7A47-F89A-E5A0-69999EDFA096</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Show" id="16374FF1-C4B8-124C-E9A7-00B1A25412C5">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>ACB53F81-DD7E-08EF-CAAA-84C1CE0FCF71</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Round" id="3919BD2D-40F8-0879-6E9E-67CAD767892F">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>0750C777-2D35-D19D-A5CC-C3FE7B6349AB</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartShow" id="0976215E-B63A-D1C4-6CA7-11BB946A4558">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>2D575010-EB63-7B21-F469-7326DC2CA0AB</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MTID_MIT" id="16CCE872-86CA-C4D2-3173-70F691E70A29">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>1AA62305-CA48-2E84-F9DF-530B761DAC26</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2558B50-7E75-86DF-BB23-F3629613BE03" referredColumn="63368F90-11E7-3B97-A2A1-10EE709908EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E107F592-C2B1-0D7E-D172-AF8078CDA83A" name="Showtime_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>C85A6C99-344D-93D0-B9D9-209FB2CB6E5A</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16374FF1-C4B8-124C-E9A7-00B1A25412C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FAFC4BA-9C79-959D-C92B-24CEC78F3460" name="Showtime_Movie_In_Theater_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>4BC3552A-4AFA-9B63-3485-32D3A50595E9</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="16CCE872-86CA-C4D2-3173-70F691E70A29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

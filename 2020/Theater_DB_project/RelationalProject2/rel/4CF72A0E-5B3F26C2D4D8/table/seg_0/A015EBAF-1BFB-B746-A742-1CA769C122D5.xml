@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A015EBAF-1BFB-B746-A742-1CA769C122D5" name="Movie_In_Theater">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>CA9EE987-A75C-5488-949F-348E034CA451</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MIT" id="63368F90-11E7-3B97-A2A1-10EE709908EB">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>4E245CED-9FEC-8DE2-43B8-2AE11B1CA8FA</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MTDate" id="5FE3F817-AA74-A622-54C2-770DBD14D26E">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>EFE6B23A-C3DE-DF4E-FA90-54262A1A352B</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MID_Movie" id="0AF35920-4D37-3FCA-AA1A-5B5C0F8CC7F3">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>4CE0FF8A-1C89-35FC-63DC-76DF5F884DEF</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AD0C47F4-7A03-E1C1-4865-0D8A2668E417" referredColumn="2811B75B-AFE2-E736-982A-643E98B9903A"/>
+</associations>
+</Column>
+<Column name="TID_Theater" id="EFD34709-D618-7C85-8C3E-A01679DA8398">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>DC7E55EE-4DC1-4EFD-5FE3-36D8E3A393C5</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDC2A13D-EB82-A39F-F71E-6138A52A82F1" referredColumn="B465EF51-6B61-9C28-037A-52DFD0EEB475"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8EBB3769-9814-EBB7-B9BB-E92EE0FF8660" name="Movie_In_Theater_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>22FA57D7-A30B-97AF-8750-227DD440949B</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63368F90-11E7-3B97-A2A1-10EE709908EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="755A1E87-84B7-86DB-23C4-6B83F0200552" name="Movie_In_Theater_Movies_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>FD12F0B9-CC94-9DEA-0F19-0BA81B420BE1</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AF35920-4D37-3FCA-AA1A-5B5C0F8CC7F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8581B66D-500E-D5BA-5442-A4CBE6460AEE" name="Movie_In_Theater_Theaters_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>4006A307-AFA7-BE7E-099D-A0533EF7C97C</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFD34709-D618-7C85-8C3E-A01679DA8398"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

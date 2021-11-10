@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7393456-977F-9DD3-11B0-3EF1DCF9B551" name="Card">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>C11A2CB7-E5DD-E52B-5E24-A4346A8792AB</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Card" id="05778883-6297-26E2-73B6-6D095DF35769">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>731C8D28-4F98-2DCD-A403-25CD92CA91A6</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Regis_Date" id="8F4D45A3-022B-7C6C-85C5-B5F6F0F8921C">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>3A4F39A6-F114-8015-A1E9-5BBEB737F75A</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXP_Date" id="6B720DE3-8F4C-04DF-6E25-8B9F7180484E">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>7E7FA838-4F38-2739-0D91-3FB7124FFCCC</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CuID_Cus" id="1A77488F-8C93-7943-7209-B71F13AE49BA">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>CB1C62FD-2341-3442-3D9E-8F9E51DCCCC6</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1AD0163-AF59-1BB0-4D5C-5A1F12B48D4E" referredColumn="63FCAE6E-9A9C-8BFC-6059-2BE799200DDC"/>
+</associations>
+</Column>
+<Column name="CID_Type" id="F9D67270-CE21-E5E3-A8E4-37B6C274581D">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>8329F99A-CCD9-399A-101D-B1DD0AC514A7</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="68DF73A8-09C0-5BAA-6FC5-79BA56BA7717" referredColumn="E15636CB-2B3E-24E1-115A-6FBFCA7B62B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="363F8E14-8886-644D-C35B-19944AC0555C" name="Card_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>2D83F28F-56CF-AC92-8D36-C7E6B623F947</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05778883-6297-26E2-73B6-6D095DF35769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="477FAFEA-B350-631D-FAE2-ADA242E50BDD" name="Card_Customers_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>E6285376-13CA-C40B-B2C9-133E58B00C94</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A77488F-8C93-7943-7209-B71F13AE49BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D2BC71A-7B69-A35A-E412-3946B7222955" name="Card_Card_Type_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>13279A45-5E2C-D9AF-D598-C65372B8A8B0</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9D67270-CE21-E5E3-A8E4-37B6C274581D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A0F2231-2C30-D41D-55F5-ADC7A4F1A65A" name="UsePoint">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>909C9916-E665-5BFF-BC4B-4882A57E54AD</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UsePoint" id="0FAC8D55-340E-4EA2-9392-723384D1348D">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>A36E02B0-5330-9BDC-12CD-565A38802AF3</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Point" id="A3C91CB8-EF0B-968D-67E1-3CEBC059247C">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>A1BE2D67-9B16-8142-5758-99EF78215E25</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PointType" id="C6A961BF-1C78-9FE8-A3A2-B2770E7BA707">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>D2D2E183-ECE7-0438-40A9-AD4D3023A120</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UseDate" id="47343E8D-3F1C-34A5-3548-42F7FEA7A898">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>B56D9588-31F2-AE52-C920-9D061E1870F4</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Description" id="1FBF32C7-8A3A-9821-8EBE-E042BC858E4E">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>7FF2138A-78F9-54E7-EDF8-5C070D1238A7</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CID_Card" id="15BDEF7C-9E8D-A8A5-9568-39488BB4B814">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>74CE379A-E239-B9B0-5068-4EEA99F72F0B</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D406692-CD99-6E2C-10E3-F8300B9BCC3B" referredColumn="05778883-6297-26E2-73B6-6D095DF35769"/>
+</associations>
+</Column>
+<Column name="TkID_Ticket" id="11C76C7E-2C5F-FA52-341F-2B2496187B65">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>766089B9-405C-A116-166A-D809B970D1C1</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E43002CE-47AD-65FE-E2E4-36415006AD57" referredColumn="CA5C0003-06D8-31B4-2B84-1117AB6D2509"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3EB5F7BB-C106-7696-67DE-EA6D6AFB44A1" name="UsePoint_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>CE0D2782-4C00-D134-29C4-62320AD1DD88</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FAC8D55-340E-4EA2-9392-723384D1348D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5350584-D3F8-750F-AE44-EBEF80F63CEF" name="UsePoint_Card_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>86F00ED4-0FDC-30EA-44C4-97B96E31E26A</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15BDEF7C-9E8D-A8A5-9568-39488BB4B814"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A364E12-2FF4-013C-1A4A-416AAAD6C8BA" name="UsePoint_Ticket_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>AD4360D4-7535-86A9-CEE9-34D9B4FA74B9</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11C76C7E-2C5F-FA52-341F-2B2496187B65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,167 @@
+
+DROP TABLE COUNTRIES CASCADE CONSTRAINTS;
+DROP TABLE CITIES CASCADE CONSTRAINTS;
+DROP TABLE DEPTS CASCADE CONSTRAINTS;
+DROP TABLE EMPS CASCADE CONSTRAINTS;
+
+-------------------------------------------------------
+
+CREATE TABLE COUNTRIES (
+  CNTCODE NUMBER(6)   PRIMARY KEY, 
+  CNTNAME VARCHAR2(12)
+);
+
+INSERT INTO COUNTRIES VALUES (11, 'UK');
+INSERT INTO COUNTRIES VALUES (12, 'US');
+INSERT INTO COUNTRIES VALUES (15, 'France');
+INSERT INTO COUNTRIES VALUES (16, 'Italy');
+INSERT INTO COUNTRIES VALUES (17, 'Japan');
+INSERT INTO COUNTRIES VALUES (18, 'Germany');
+INSERT INTO COUNTRIES VALUES (19, 'Canada');
+INSERT INTO COUNTRIES VALUES (20, 'China');
+INSERT INTO COUNTRIES VALUES (21, 'Australia');
+INSERT INTO COUNTRIES VALUES (23, 'Singapore');
+INSERT INTO COUNTRIES VALUES (24, 'Thailand');
+
+-------------------------------------------------------
+
+CREATE TABLE CITIES (
+  CITCODE NUMBER(6)   PRIMARY KEY, 
+  CITNAME VARCHAR2(12),
+  CNTCODE NUMBER(6)   NOT NULL REFERENCES COUNTRIES
+);
+
+INSERT INTO CITIES VALUES (130, 'Rome', 16);
+INSERT INTO CITIES VALUES (753, 'Naples', 16);
+INSERT INTO CITIES VALUES (264, 'Melbourne', 12);
+INSERT INTO CITIES VALUES (723, 'Austin', 12);
+INSERT INTO CITIES VALUES (711, 'London', 11);
+INSERT INTO CITIES VALUES (729, 'Paris', 15);
+INSERT INTO CITIES VALUES (638, 'Kyoto', 17);
+INSERT INTO CITIES VALUES (620, 'Naples', 12);
+INSERT INTO CITIES VALUES (478, 'Bangkok', 24);
+INSERT INTO CITIES VALUES (285, 'Chicago', 12);
+INSERT INTO CITIES VALUES (975, 'Shanghai', 20);
+INSERT INTO CITIES VALUES (464, 'Sydney', 21);
+INSERT INTO CITIES VALUES (463, 'Tokyo', 17);
+INSERT INTO CITIES VALUES (531, 'Dallas', 12);
+INSERT INTO CITIES VALUES (645, 'Pattaya', 24);
+INSERT INTO CITIES VALUES (684, 'Beijing', 20);
+INSERT INTO CITIES VALUES (964, 'Berlin', 18);
+INSERT INTO CITIES VALUES (163, 'Singapore', 23);
+INSERT INTO CITIES VALUES (583, 'Munich', 18);
+INSERT INTO CITIES VALUES (678, 'Melbourne', 21);
+INSERT INTO CITIES VALUES (673, 'Toronto', 19);
+INSERT INTO CITIES VALUES (904, 'Phuket', 24);
+
+-------------------------------------------------------
+
+CREATE TABLE DEPTS (
+  ID    NUMBER(6)   PRIMARY KEY, 
+  TITLE VARCHAR2(12), 
+  LOC   NUMBER(6)   REFERENCES CITIES,
+  MGR   NUMBER(6)   -- REFERENCES EMPS
+);
+
+INSERT INTO DEPTS VALUES (4623, 'HR',         531, null);
+INSERT INTO DEPTS VALUES (5930, 'Sales',      163, null);
+INSERT INTO DEPTS VALUES (3866, 'Asset Mgt',  645, null);
+INSERT INTO DEPTS VALUES (5748, 'Office Mgt', 964, null);
+INSERT INTO DEPTS VALUES (3245, 'HQ',         975, null);
+INSERT INTO DEPTS VALUES (1657, 'PR',         130, null);
+INSERT INTO DEPTS VALUES (6542, 'Production', 163, null);
+
+-------------------------------------------------------
+
+CREATE TABLE EMPS (
+  ID     NUMBER(6)    PRIMARY KEY, 
+  FNAME  VARCHAR2(12), 
+  DEPT   NUMBER(6)    REFERENCES DEPTS,
+  LOC    NUMBER(6)    REFERENCES CITIES,
+  SALARY NUMBER(8,2)
+);
+
+INSERT INTO EMPS VALUES (54872, 'Robert',  4623, 531,  49604.64);
+INSERT INTO EMPS VALUES (45623, 'Smith',   4623, 531,  24534.93);
+INSERT INTO EMPS VALUES (57553, 'Joseph',  5930, 285,  null);
+INSERT INTO EMPS VALUES (78645, 'O''Neal', 5930, null, 67465.26);
+INSERT INTO EMPS VALUES (86645, 'Richard', 3866, 463,  75255.00);
+INSERT INTO EMPS VALUES (24564, 'Julia',   5748, 285,  44662.57);
+INSERT INTO EMPS VALUES (17534, 'Rose',    5748, null, 94304.23);
+INSERT INTO EMPS VALUES (75435, 'Allen',   3245, 975,  null);
+INSERT INTO EMPS VALUES (70638, 'Eve',     null, 285,  56454.22);
+INSERT INTO EMPS VALUES (48053, 'Sally',   1657, 645,  15446.75);
+INSERT INTO EMPS VALUES (96543, 'Tonya',   1657, null, 69463.36);
+INSERT INTO EMPS VALUES (29605, 'Betty',   1657, 723,  null);
+INSERT INTO EMPS VALUES (35754, 'Susan',   null, 463,  75473.45);
+
+-------------------------------------------------------
+
+ALTER TABLE DEPTS ADD FOREIGN KEY (MGR) REFERENCES EMPS;
+
+UPDATE DEPTS SET MGR = 48053 WHERE ID = 1657;
+UPDATE DEPTS SET MGR = 45623 WHERE ID = 4623;
+UPDATE DEPTS SET MGR = 78645 WHERE ID = 5930;
+UPDATE DEPTS SET MGR = 70638 WHERE ID = 5748;
+UPDATE DEPTS SET MGR = 48053 WHERE ID = 3245;
+
+-------------------------------------------------------
+
+COMMIT;
+
+--1.1.	List department title and its manager name.  If the department does not have a manager, just write 'No Manager'.
+
+SELECT D.TITLE, NVL(E.FNAME,'No Manager') "MANAGER"
+FROM DEPTS D
+LEFT JOIN EMPS E
+ON E.ID = D.MGR;
+
+--1.2.	List all city name, country name, and the number of departments in that city/country. If there is no department in that city/country, write 0. 
+
+SELECT CT.CITNAME, C.CNTNAME, COUNT(D.ID) "NUMBER OF DEPARTMENTS"
+FROM DEPTS D
+RIGHT JOIN CITIES CT 
+ON D.LOC = CT.CITCODE, COUNTRIES C WHERE CT.CNTCODE = C.CNTCODE GROUP BY CT.CITNAME, C.CNTNAME;
+
+--1.3.	List the country name and the number of departments in that country. Show the answers in descending order of the number of departments and then ascending order of the country name.
+SELECT C.CNTNAME, COUNT(D.ID) "NUMBEROFDEPARTMENT"
+FROM CITIES CT
+LEFT JOIN DEPTS D
+ON CT.CITCODE = D.LOC, COUNTRIES C
+WHERE c.cntcode = ct.cntcode GROUP BY C.CNTNAME
+ORDER BY  COUNT(D.ID)
+DESC,C.CNTNAME ASC;
+
+--1.4.	List all employee names and their department's titles. If there is no employee or no department, just write 'No Employee' for that department or 'No Department' for the employee.
+SELECT NVL(E.FNAME,'NO EMPLOYEE') "EMPLOYEE NAME" , NVL(D.TITLE,'NO DEPARTMENT') "DEPARTMENT TITLE"
+FROM EMPS E
+FULL JOIN DEPTS D
+ON E.DEPT = D.ID;
+
+--1.5. List department title that city in ‘Rome’ has.
+SELECT D.TITLE 
+FROM DEPTS D LEFT JOIN CITIES C ON D.LOC = C.CITCODE
+WHERE C.CITNAME = 'Rome';
+
+--1.6. List the name of the city that have a department.
+SELECT C.CITNAME
+FROM CITIES C LEFT JOIN DEPTS D ON C.CITCODE = D.LOC;
+
+--1.7. List the country name and the number of departments in that country.
+SELECT T.CNTNAME, COUNT(D.LOC)
+FROM (COUNTRIES T JOIN CITIES C ON T.CNTCODE = C.CNTCODE)
+LEFT JOIN DEPTS D ON C.CITCODE = D.LOC
+GROUP BY T.CNTCODE, T.CNTNAME;
+
+--1.8. List location of department at LOC is '163' and its manager name. If the department does not have a manager write 'No Manager'.
+SELECT D.LOC, NVL(E.FNAME,'No Manager') "MANAGER"
+FROM DEPTS D
+LEFT JOIN EMPS E
+ON E.ID = D.MGR
+WHERE D.LOC = '163';
+
+--1.9. List all city name, country name, and the number of departments in that city/country. If there is no department in that city and country show 0.
+SELECT C.CITNAME, CT.CNTNAME, COUNT(D.LOC) "NUMOFDEPARTMENT"
+FROM (DEPTS D RIGHT JOIN CITIES C ON C.CITCODE = D.LOC), COUNTRIES CT
+WHERE CT.CNTCODE = C.CNTCODE
+GROUP BY C.CITCODE, C.CITNAME, CT.CNTNAME;

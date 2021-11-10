@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA9EE987-A75C-5488-949F-348E034CA451" name="Movie_In_Theater">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:01:39 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_MIT" id="4E245CED-9FEC-8DE2-43B8-2AE11B1CA8FA">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:55:40 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MTDate" id="EFE6B23A-C3DE-DF4E-FA90-54262A1A352B">
+<createdBy>Best</createdBy>
+<createdTime>2020-11-28 19:11:49 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Movie" id="4CE0FF8A-1C89-35FC-63DC-76DF5F884DEF">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 16:19:44 UTC</createdTime>
+<generatorID>FD12F0B9-CC94-9DEA-0F19-0BA81B420BE1</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<referedAttribute>7E522D62-FF3A-3384-4D55-B36E463533E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Theater" id="DC7E55EE-4DC1-4EFD-5FE3-36D8E3A393C5">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 16:19:48 UTC</createdTime>
+<generatorID>4006A307-AFA7-BE7E-099D-A0533EF7C97C</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<referedAttribute>97DEF55A-293A-B221-03E5-4374509829AD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="22FA57D7-A30B-97AF-8750-227DD440949B" name="Movie_In_Theater PK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:55:49 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4E245CED-9FEC-8DE2-43B8-2AE11B1CA8FA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

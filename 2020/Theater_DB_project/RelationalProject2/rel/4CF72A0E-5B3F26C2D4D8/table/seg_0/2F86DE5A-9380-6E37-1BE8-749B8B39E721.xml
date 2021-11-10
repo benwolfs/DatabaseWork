@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F86DE5A-9380-6E37-1BE8-749B8B39E721" name="Ticket">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>18DA8176-ECD4-0C35-AAA7-EE4CEAB09F8D</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Ticket" id="CA5C0003-06D8-31B4-2B84-1117AB6D2509">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>8083375F-66E1-BF93-009D-61FB84B38FE5</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DateTicket" id="E19FB0C6-B9BA-BD76-B90E-9BCE78B6C92E">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>373AA589-EB2E-D668-5BDD-F43363AAF10A</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CuID_Cus" id="951AB0E8-2885-FC4A-64BA-CFE268BC9651">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>6D40AFE5-EBF8-9F21-45A0-7B56620BC9AC</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FEF0882D-7788-CBD8-6B22-EF871E4D0134" referredColumn="63FCAE6E-9A9C-8BFC-6059-2BE799200DDC"/>
+</associations>
+</Column>
+<Column name="ShID_Show" id="63AB444D-7BAD-C9C7-1179-CE9226F1E7F5">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>4862DD6F-5BED-BAB6-E368-7301CD4AA34C</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0099BEFB-979C-83C2-324D-504ACC43B2F6" referredColumn="16374FF1-C4B8-124C-E9A7-00B1A25412C5"/>
+</associations>
+</Column>
+<Column name="SID_Seat" id="1C35D8C3-2328-B4DF-AAB2-7D08F1A715A9">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>0ADE4578-F58C-1A49-D10D-1B030BE30F13</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C44A4E90-AF53-E4F5-5048-E3C658DA757A" referredColumn="D629D28B-CA13-4DDF-C276-17D7E52B9FA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="164CFCAF-B287-2B8E-D6B8-CF41F25ED073" name="Ticket_PK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>6D911F7B-2BDC-CC90-9BB3-837BD35F19F2</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA5C0003-06D8-31B4-2B84-1117AB6D2509"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D17AED5B-5C2E-518A-E7C5-B167546CC97B" name="Ticket_Customers_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>02CAF86C-2490-2B02-D9B7-74D25BD75EEE</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="951AB0E8-2885-FC4A-64BA-CFE268BC9651"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="948C407B-068A-8BB4-AB67-43E739D36B3D" name="Ticket_Showtime_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>D62F75C2-2796-5167-CB96-DF4E8C23BA6F</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63AB444D-7BAD-C9C7-1179-CE9226F1E7F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="436400A5-8079-16C8-A8CD-C66BE722917D" name="Ticket_Seat_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>7AD5F519-64E8-BAA7-363B-427AC099C561</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C35D8C3-2328-B4DF-AAB2-7D08F1A715A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

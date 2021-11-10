@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="18DA8176-ECD4-0C35-AAA7-EE4CEAB09F8D" name="Ticket">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 14:56:22 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Ticket" id="8083375F-66E1-BF93-009D-61FB84B38FE5">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:59:07 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>6,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DateTicket" id="373AA589-EB2E-D668-5BDD-F43363AAF10A">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 16:07:53 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Cus" id="6D40AFE5-EBF8-9F21-45A0-7B56620BC9AC">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 16:16:11 UTC</createdTime>
+<generatorID>02CAF86C-2490-2B02-D9B7-74D25BD75EEE</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F0F5932C-8575-BED3-A4A2-366AAE76B550</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Show" id="4862DD6F-5BED-BAB6-E368-7301CD4AA34C">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 16:17:42 UTC</createdTime>
+<generatorID>D62F75C2-2796-5167-CB96-DF4E8C23BA6F</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<referedAttribute>ACB53F81-DD7E-08EF-CAAA-84C1CE0FCF71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Seat" id="0ADE4578-F58C-1A49-D10D-1B030BE30F13">
+<createdBy>Best</createdBy>
+<createdTime>2020-11-27 18:58:19 UTC</createdTime>
+<generatorID>7AD5F519-64E8-BAA7-363B-427AC099C561</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<referedAttribute>878E6297-0DFB-CFBA-351C-6794AA7553BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6D911F7B-2BDC-CC90-9BB3-837BD35F19F2" name="Ticket PK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:59:31 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8083375F-66E1-BF93-009D-61FB84B38FE5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

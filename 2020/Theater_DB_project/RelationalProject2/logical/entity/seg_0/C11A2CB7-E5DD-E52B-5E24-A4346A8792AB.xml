@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C11A2CB7-E5DD-E52B-5E24-A4346A8792AB" name="Card">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 14:54:20 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Card" id="731C8D28-4F98-2DCD-A403-25CD92CA91A6">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:07:17 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Regis_Date" id="3A4F39A6-F114-8015-A1E9-5BBEB737F75A">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:07:36 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXP_Date" id="7E7FA838-4F38-2739-0D91-3FB7124FFCCC">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:11:06 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Cus" id="CB1C62FD-2341-3442-3D9E-8F9E51DCCCC6">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 16:13:28 UTC</createdTime>
+<generatorID>E6285376-13CA-C40B-B2C9-133E58B00C94</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F0F5932C-8575-BED3-A4A2-366AAE76B550</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Type" id="8329F99A-CCD9-399A-101D-B1DD0AC514A7">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 16:14:43 UTC</createdTime>
+<generatorID>13279A45-5E2C-D9AF-D598-C65372B8A8B0</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="true"/>
+</engineerTo>
+<referedAttribute>9FFF1C9A-A64C-3F95-B1FE-6F868698DD3C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2D83F28F-56CF-AC92-8D36-C7E6B623F947" name="Card PK">
+<createdBy>User</createdBy>
+<createdTime>2020-10-13 15:07:33 UTC</createdTime>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4CF72A0E-0447-3B3F-EE2C-5B3F26C2D4D8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>731C8D28-4F98-2DCD-A403-25CD92CA91A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

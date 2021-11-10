@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1A0D1B3-AFCD-14EF-FF30-8E5E2F56ABED" containerWithKeyObject="63FAB21D-19B2-298B-17CD-0AA3D7AC2922" localFKIndex="012858B9-84D7-AE09-2935-46EFC8372961" name="Theaters_Branch_FK">
+<createdBy>User</createdBy>
+<createdTime>2020-11-29 13:45:54 UTC</createdTime>
+<generatorID>DFF41421-B5C4-7D2C-5468-64DD24F35689</generatorID>
+<ownerDesignName>RelationalProject2</ownerDesignName>
+<referredTableLongName>Branch</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BD5FD646-154B-C74F-FB58-E9C426386DDF</referredTableID>
+<keyObject>918193C4-1526-7265-6482-563607AF1ADC</keyObject>
+<referredKeyID>918193C4-1526-7265-6482-563607AF1ADC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Branch</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
